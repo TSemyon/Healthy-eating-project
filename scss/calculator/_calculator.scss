@@ -1,0 +1,89 @@
+// ----------- Calculator ----------- //
+
+.main {
+   &__calculator {
+      background-color: #F0F4EF;
+      padding: 100px 0px 100px 0px;
+   }
+}
+.calculator {
+   &__choice {
+      margin: 0px -30px;
+   }
+   &__total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 30px;
+      font-weight: 600;
+      color: #4B5839;
+   }
+   &__title {
+      margin: 0px 30px 0px 0px;
+   }
+   &__result {
+      & span {
+         margin: 0px 15px 0px 0px;
+         font-size: 50px;
+      }
+   }
+}
+.choice-block {
+   &__row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex: 1 1 25%;
+      padding: 30px;
+   }
+   &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 15px;
+      border: 1.5px solid #4B5839;
+      background-color: transparent;
+      height: 80px;
+      width: 300px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #4B5839;
+      cursor: pointer;
+      &.active {
+         border: none;
+         background-color:#4B5839;
+         color: #fff;
+      }
+   }
+   &__header {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      color: #4B5839;
+      margin: 0px 0px -30px 0px;
+   }
+}
+
+// ----------- Адаптив ----------- //
+
+@media (max-width: 800px) {
+   .main {
+      &__calculator {
+         padding: 50px 0px 50px 0px;
+      }
+   }
+}
+@media (max-width: 800px) {
+   .calculator {
+      &__total {
+         font-size: 20px;
+      }
+      &__result {
+         & span {
+            font-size: 30px;
+         }
+      }
+   }
+}

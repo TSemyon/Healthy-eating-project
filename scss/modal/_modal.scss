@@ -1,0 +1,72 @@
+// ----------- Modal ----------- //
+
+.modal {
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 1000;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   background-color: rgba(48, 48, 48, 0.5);
+   &__close {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      width: 30px;
+      cursor: pointer;
+      z-index: 4000;
+      & img {
+         width: 100%;
+      }
+   }
+   &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFF;
+      padding: 20px;
+      position: relative;
+   }
+   &__content {
+      max-width: 550px;
+   }
+   &__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: -20px;
+      flex-wrap: wrap;
+   }
+   &__item {
+      flex: 1 1 100%;
+      padding: 20px;
+   }
+   &__input {
+      text-align: center;
+      height: 60px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #4B5839;
+      background-color: none;
+      border: 1.5px solid #4B5839;
+   }
+   &__button {
+      height: 60px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #ffff;
+      padding: 0px 31px 0px 31px;
+      background-color: #A7B09D;
+      transition: all .5s ease 0s;
+      &:hover {
+         background-color: #6a7a59;
+      }
+   }
+}

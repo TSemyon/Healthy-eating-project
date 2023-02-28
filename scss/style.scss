@@ -1,0 +1,62 @@
+// ----------- Import ----------- //
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+@import "_nullstyle.scss";
+@import "./header/header.scss";
+@import "./main/main-block";
+@import "./promotion/promotion";
+@import "./idea/idea";
+@import "./calculator/calculator";
+@import "./menu/menu";
+@import "./advantages/advantages";
+@import "./order/order";
+@import "./footer/footer";
+@import "./modal/modal";
+
+
+// ----------- Container ----------- //
+
+[class*="__container"] {
+   max-width: 1380px;
+   margin: 0 auto;
+   padding: 0px 30px;
+   box-sizing: content-box;
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+
+// ----------- Work-class ----------- //
+
+.error {
+   border: 1px solid red
+}
+.show-modal {
+   display: flex;
+}
+.hide-modal {
+   display: none;
+}
+.show {
+   display: block;
+}
+.hide {
+   display: none;
+}
+.active {
+   font-weight: 900;
+}
+.fade {
+   animation-name: 
+   fade;animation-duration: 1s;
+}
+@keyframes fade {
+   from{opacity: 0.2;}
+   to{opacity: 1;}
+}
+
+

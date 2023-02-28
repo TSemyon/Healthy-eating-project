@@ -1,0 +1,44 @@
+// ----------- Main ----------- //
+
+.main {
+   &__order {
+      padding: 0px 0px 100px 0px;
+   }
+}
+.order {
+   &__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: -20px;
+      flex: 1 1 100%
+   }
+   &__item {
+      padding: 20px;
+      flex: 1 1 33.333%;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__input {
+      display: flex;
+      width: 100%;
+      height: 80px;
+      text-align: center;
+      background-color: none;
+      font-size: 24px;
+      font-weight: 600;
+      color: #4B5839;
+      border: 1.5px solid #4B5839;
+   }
+}
+
+// ----------- Адаптив ----------- //
+
+@media (max-width: 640px) {
+   .order {
+      &__input {
+         font-size: 16px;
+      }
+   }
+}

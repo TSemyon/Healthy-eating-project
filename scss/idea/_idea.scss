@@ -1,0 +1,25 @@
+// ----------- Idea ----------- //
+
+.idea {
+   &__header {
+      padding: 100px 0px 100px 0px;
+      max-width: 1200px;
+   }
+}
+.header-block {
+   &__description {
+      &._black {
+         color: #110D0A;
+      }
+   }
+}
+
+// ----------- Адаптив ----------- //
+
+@media (max-width: 800px) {
+   .idea {
+      &__header {
+         padding: 80px 0px 50px 0px;
+      }
+   }
+}

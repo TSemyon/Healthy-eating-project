@@ -1,0 +1,118 @@
+// ----------- Main ----------- //
+
+._ibg {
+   position: relative;
+}
+._ibg img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   object-position: left;
+}
+
+.main {
+   flex: 1 1 100%;
+   z-index: 1;
+
+}
+.main-block {
+   position: relative;
+   height: 100vh;
+   &__content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 170px 0px 120px 0px;
+      max-width: 710px;
+   }
+   &__title {
+      font-size: 50px;
+      font-weight: 900;
+      color: #ffff;
+      margin: 0px 0px 50px 0px;
+   }
+   &__label {
+      font-size: 25px;
+      font-weight: 600;
+      color: #ffff;
+      margin: 0px 0px 20px 0px;
+   }
+   &__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+   }
+   &__dark {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      opacity: 0.3;
+      background-color: #4B5839;
+   }
+}
+.main-block {
+   &__button {
+      margin: 0 -20px;
+   }
+}
+.button {
+   &__items {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   &__item {
+      padding: 20px;
+      min-width: 300px;
+      box-sizing: content-box;
+   }
+   &__contact {
+      width: 100%;
+      height: 80px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #ffff;
+      padding: 21.5px 0px 21.5px 0px;
+      background-color: #A7B09D;
+      transition: all .5s ease 0s;
+      &:hover {
+         background-color: #6a7a59;
+      }
+   }
+}
+
+// ----------- Адаптив ----------- //
+
+@media (max-width: 768px) {
+   .main-block {
+      &__title {
+         font-size: 40px;
+      }
+      &__label {
+         font-size: 20px;
+      }
+   }
+}
+@media (max-width: 480px) {
+   .main-block {
+      &__title {
+         font-size: 30px;
+      }
+      &__label {
+         font-size: 18px;
+      }
+   }
+}
+
+
+
+
+

@@ -1,0 +1,91 @@
+// ----------- Header ----------- //
+
+.header {
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 200;
+   width: 100%;
+   background-color: #F0F4EF;
+   &__container {
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__logo {
+      min-width: 120px;
+      margin: 0px 150px 0px 0px;
+   }
+   &__menu {
+      margin: 0px 150px 0px 0px;
+   }
+}
+.menu {
+   display: flex;
+   flex: 1 1 auto;
+   &__list {
+      display: flex;
+   }
+   &__item {
+      display: flex;
+      width: 80px;
+      flex: 1 1 25%;
+      font-size: 18px;
+      margin: 0px 30px 0px 0px;
+      &:hover {
+         cursor: pointer;
+      }
+   }
+   &__contact {
+      font-size: 24px;
+      margin: 0px 0px 0px 0px;
+   }
+}
+
+// ----------- Адаптив ----------- //
+
+@media (min-width: 1440px) {
+   .header {
+      &__menu {
+         margin: 0px 250px 0px 0px;
+      }
+      &__logo {
+         margin: 0px 200px 0px 0px;
+      }
+   }
+}
+@media (max-width: 1200px) {
+   .header {
+      &__menu {
+         margin: 0px 50px 0px 0px;
+      }
+      &__logo {
+         margin: 0px 70px 0px 0px;
+      }
+   }
+}
+@media (max-width: 800px) {
+   .header {
+      &__menu {
+         display: flex;
+         justify-content: flex-end;
+         margin: 0px 0px 0px 0px;
+      }
+   }
+   .menu {
+      &__list {
+         display: flex;
+         justify-content: flex-end;
+      }
+      &__item {
+         justify-content: flex-end;
+         margin: 0px 0px 0px 10px;
+      }
+   }
+}
+@media (max-width: 600px) {
+   .menu__body {
+      display: none;
+   }
+}
